@@ -2,8 +2,8 @@
 
 ## What does this service do?
 
-This is an example of graphQL API. The server provides a way to request example basic statistics on TV shows and the people consuming them.
-The statistics statistics base on randomly generated fakedata.
+This graphQL API server provides a way to request some basic statistics on TV shows and the people consuming them.
+The statistics were made based on randomly generated fake data.
 <br> 
 You can ask:
 > how many of the sample persons belong to a given group (combinations of industry and activity)
