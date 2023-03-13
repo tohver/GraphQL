@@ -2,28 +2,28 @@
 
 ## What does this service do?
 
-The graphql API server provides a way to request basic statistics about the closed and not cancelled contracts.
+This is an example of graphQL API. The server provides a way to request example basic statistics on TV shows and the people consuming them.
+The statistics statistics base on randomly generated fakedata.
+<br> 
 You can ask:
-> how many contracts were closed in a given period with the selected insurer, for the selected product or industry(???) or any combination of them.
-The `period` parameter is obligatory. You can request the number of all contracts from the beginning (`Total`), last year (`Year`), three months (`Quartal`) or one week (`Week`). 
-you can combine insurer, tag and product (or choose only the period)
+> how many of the sample persons belong to a given group (combinations of industry and activity)
+> how many people from the selected group (see above) used to watch a given TV network
+> how many people from the selected group watched the selected TV show
+
+The `period` parameter is obligatory. You can request the number persons from the beginning (`Total`), last year (`Year`), three months (`Quartal`) or one week (`Week`). 
 
 
 # Requirements
 * Node, Yarn or NPM
-* Prisma CLI installed globally - `yarn -g add prisma`
+* polars
 * GraphQL Yoga
 
 
 # Getting started
 ```
-# 1. Install packages
-`yarn install` or `npm install` 
-# 2. Copy `.env-example` to `.env` (in src folder) and update the keys
-cp .env.example .env && code .env
-# 3. Initialize the prisma client
-yarn prisma generate 
-# or 
-npx prisma generate
-4. Start GraphQL server (runs playground on http://localhost:4000)
+# 1. Build the docker image
+`docker build -t shows .` 
+# 2. Run the container
+`docker run -p 4000:4000 shows`
+4.The Yoga server enables the GraphQL playgorund on http://localhost:4000
 ```
