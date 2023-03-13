@@ -6,11 +6,11 @@ This graphQL API server provides a way to request some basic statistics on TV sh
 The statistics were made based on randomly generated fake data.
 <br> 
 You can ask:
-> how many of the sample persons belong to a given group (combinations of industry and activity)
-> how many people from the selected group (see above) used to watch a given TV network
-> how many people from the selected group watched the selected TV show
+* how many of the sample belong to a given group (combinations of industries and activities) <br>
+* how many of people from the selected group (see above) used to watch a given TV network over the given period
+* how many people from the selected group watched the selected TV show over the selected period 
 
-The `period` parameter is obligatory. You can request the number persons from the beginning (`Total`), last year (`Year`), three months (`Quartal`) or one week (`Week`). 
+The `period` parameter is obligatory. You can request the number persons from the beginning (`Total`), last year (`Year`), last three months (`Quartal`) or one week (`Week`). 
 
 
 # Requirements
