@@ -10,7 +10,7 @@ You can ask:
 * how many of people from the selected group (see above) used to watch a given TV network over the given period
 * how many people from the selected group watched the selected TV show over the selected period 
 
-The `period` parameter is obligatory. You can request the number persons from the beginning (`Total`), last year (`Year`), last three months (`Quartal`) or one week (`Week`). 
+The `period` parameter is obligatory. 
 
 
 # Requirements
